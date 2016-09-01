@@ -2,7 +2,7 @@
 
 ## Getting Up and Running:
 
-* Ruby version: 4.2.6
+* Ruby version: 4.2.1
 
 * System dependencies: ...
 
