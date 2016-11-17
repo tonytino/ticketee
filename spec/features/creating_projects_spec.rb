@@ -2,11 +2,12 @@ require 'rails_helper'
 
 RSpec.feature 'Users can create new projects' do
 
-  scenario 'with valid attributes' do
-
+  before(:each) do
     visit '/'
-
     click_link 'New Project'
+  end
+
+  scenario 'with valid attributes' do
 
     fill_in 'Name', with: 'Sublime Text 3'
     fill_in 'Description', with: 'A text editor for everyone'
@@ -22,10 +23,6 @@ RSpec.feature 'Users can create new projects' do
   end
 
   scenario 'when providing invalid attributes' do
-
-    visit '/'
-
-    click_link 'New Project'
 
     click_button 'Create Project'
 
