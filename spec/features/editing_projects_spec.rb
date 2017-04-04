@@ -1,4 +1,4 @@
-require 'rails_helper.rb'
+require 'rails_helper'
 
 RSpec.feature 'Users can edit existing projects' do
 
@@ -9,7 +9,7 @@ RSpec.feature 'Users can edit existing projects' do
     visit '/'
     click_link 'Sublime Text 3'
     click_link 'Edit Project'
-    fill_in 'name', with: updated_name
+    fill_in 'Name', with: updated_name
     click_button 'Update Project'
 
     expect(page).to have_content 'Project has been updated.'
