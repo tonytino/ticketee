@@ -1,6 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
+@import 'projects';
 
 /*
 
@@ -8,7 +9,8 @@
 
 */
 
-.page-header {
+header {
+  @extend .page-header;
   position: relative;
   padding-bottom: 0px;
 
